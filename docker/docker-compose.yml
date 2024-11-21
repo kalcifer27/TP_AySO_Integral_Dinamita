@@ -1,0 +1,12 @@
+
+
+services:
+    web:
+        image: yabukijoe27/web1
+        ports:
+                - 8081:80
+        volumes:
+                - ./web/file/:/usr/share/nginx/html/file
+
+            
+#docker run -d -v ./web/file/:/usr/share/nginx/html/file   -p 8080:80 web1:v1
